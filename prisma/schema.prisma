@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  LOCATAIRE
+  BAILLEURE
+}
+
+model User {
+  id         Int       @id @default(autoincrement())
+  nom        String
+  prenom     String
+  cin        String    @db.VarChar(10)
+  tel        Int       @unique
+  email      String    @unique
+  password   String
+  role       Role      @default(LOCATAIRE)
+  rate       Int       @default(0)
+  annonces   Annonce[]
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+}
+
+enum Appartement {
+  APPARTEMENT
+  STUDIO
+  MAISON
+  VILLA
+}
+
+enum Tannonce {
+  MENSUELLE
+  HEBDOMADAIRE
+}
+
+model Annonce {
+  id                        Int         @id @default(autoincrement())
+  user_id                   Int
+  Certificat_de_propriété String
+  ville                     String
+  surface                   Int
+  nb_chambre                Int
+  nb_douche                 Int
+  localisation              String
+  type_appartement          Appartement
+  type_annonce              Tannonce
+  meuble                    Boolean     @default(false)
+  prix                      Int
+  user                      User        @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  images                    Image[]
+  created_at                DateTime    @default(now())
+  updated_at                DateTime    @updatedAt
+}
+
+model Image {
+  id         Int     @id @default(autoincrement())
+  annonce_id Int
+  path       String  @db.VarChar(300) @unique
+  annonce    Annonce @relation(fields: [annonce_id], references: [id], onDelete: Cascade)
+}
