@@ -39,10 +39,10 @@ const Nav = () => {
       <h1>
         <Link
           href="/"
-          className="flex items-center text-xl font-bold text-blue-600 hover:text-blue-800"
+          className="flex items-center text-xl  "
         >
           <span>
-            <img src="logo.png" alt="" />
+            <img src="dari-logo.png" alt="" />
           </span>
         </Link>
       </h1>
@@ -54,37 +54,37 @@ const Nav = () => {
       >
         <Link
           href="/"
-          className=" link font-medium text-gray-700 hover:text-blue-600 cursor-pointer"
+          className=" box link font-medium text-gray-700  cursor-pointer"
         >
           Accuiel
         </Link>
         <Link
           href="/annonce"
-          className=" link font-medium text-gray-700 hover:text-blue-600 cursor-pointer"
+          className="box link font-medium text-gray-700  cursor-pointer"
         >
           Annonce
         </Link>
         <Link
           href="/faqs"
-          className=" link font-medium text-gray-700 hover:text-blue-600 cursor-pointer"
+          className="box link font-medium text-gray-700  cursor-pointer"
         >
           FAQ’s
         </Link>
         <Link
           href="/a propos"
-          className=" link font-medium text-gray-700 hover:text-blue-600 cursor-pointer"
+          className="box link font-medium text-gray-700  cursor-pointer"
         >
           À propos
         </Link>
         <Link
           href="/contactezNous"
-          className=" link font-medium text-gray-700 hover:text-blue-600 cursor-pointer"
+          className="box link font-medium text-gray-700  cursor-pointer"
         >
           contactez-nous
         </Link>
       </div>
       <div className="flex items-center space-x-6">
-        <span className="flex items-center text-gray-600 hover:text-blue-600 cursor-pointer">
+        <span className="flex items-center text-gray-600  cursor-pointer">
           <svg
             className="h-5 w-5 mr-1"
             xmlns="http://www.w3.org/2000/svg"

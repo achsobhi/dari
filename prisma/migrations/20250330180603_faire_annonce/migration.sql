@@ -22,6 +22,7 @@ CREATE TABLE `Annonce` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `user_id` INTEGER NOT NULL,
     `Certificat_de_propriété` VARCHAR(191) NOT NULL,
+    `ville` VARCHAR(40) NOT NULL,
     `surface` INTEGER NOT NULL,
     `nb_chambre` INTEGER NOT NULL,
     `nb_douche` INTEGER NOT NULL,
@@ -30,6 +31,7 @@ CREATE TABLE `Annonce` (
     `type_annonce` ENUM('MENSUELLE', 'HEBDOMADAIRE') NOT NULL,
     `meuble` BOOLEAN NOT NULL DEFAULT false,
     `prix` INTEGER NOT NULL,
+    `rating` FLOAT DEFAULT 0,
     `created_at` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updated_at` DATETIME(3) NOT NULL,
 
