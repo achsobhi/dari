@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Seperator from "./seperator";
 
 const slides = [
   {
@@ -42,19 +43,12 @@ export default function Carousel() {
   }, [index]); // Depend on index to trigger re-run
 
   return (
-    <div className=" relative w-full overflow-hidden m-9">
+    <div style={{
+      marginBottom:"30px"
+    }} className=" relative  overflow-hidden  m-11">
+      <Seperator title={'Les Annonce les plus populares'}/>{" "}
       <div
-        className="flex justify-center items-center rounded-xl my-10"
-        style={{
-          height: "85px",
-          backgroundColor: "rgba(255, 94, 91, 0.2)",
-        }}
-      >
-        {" "}
-        annonces les plus populaires
-      </div>
-      <div
-        className="flex transition-transform mx-3 duration-700"
+        className="flex transition-transform  duration-700"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {slides.map((slide, i) => (
@@ -92,7 +86,6 @@ export default function Carousel() {
           </div>
         ))}
       </div>
-
       {/* Navigation Dots */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, i) => (
@@ -105,7 +98,6 @@ export default function Carousel() {
           />
         ))}
       </div>
-
     </div>
   );
 }

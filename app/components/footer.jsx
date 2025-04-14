@@ -7,8 +7,11 @@ export default function Footer() {
       style={{
         width: "100%",
         padding: "140px 40px 10px 40px",
+        position:"relative",
+        bottom:"0",
+        marginTop:"80px"
       }}
-      className="bg-[#3B3363] text-white py-8 px-6"
+      className="bg-[#3B3363] text-white py-8 px-6 fixed bottom-0 left-0 right-0  z-50"
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col items-start">

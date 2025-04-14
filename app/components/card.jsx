@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AnnonceCard = ({ annonce }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -12,7 +13,6 @@ const AnnonceCard = ({ annonce }) => {
   return (
     <div className="max-w-sm w-[300px] bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
       <div className="relative">
-        {/* Display the current image */}
         <Image
           key={annonce.images[currentImageIndex].id}
           src={annonce.images[currentImageIndex].path}
@@ -22,7 +22,6 @@ const AnnonceCard = ({ annonce }) => {
           className="w-full h-48 object-cover"
         />
         
-        {/* Thumbnail navigation */}
         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
           {annonce.images.map((_, i) => (
             <div
@@ -35,6 +34,7 @@ const AnnonceCard = ({ annonce }) => {
           ))}
         </div>
       </div>
+      <Link href={`/${annonce.id}`}>
 
       <div className="p-4">
         <h3 className="text-lg font-bold">{annonce.location}</h3>
@@ -54,6 +54,7 @@ const AnnonceCard = ({ annonce }) => {
           <span className="text-sm text-gray-500">for 1 night</span>
         </p>
       </div>
+      </Link>
     </div>
   );
 };

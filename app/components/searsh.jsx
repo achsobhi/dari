@@ -1,25 +1,39 @@
-"use client"
+"use client";
 import React from "react";
 import { useState } from "react";
 import Carousel from "./carousel";
+import FastFiltring from "./fastFiltring";
 
 export default function Search() {
   const [city, setCity] = useState("");
   const [price, setPrice] = useState("");
   const [rentType, setRentType] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = () => {
+    // Add your search logic here
+    // For now, just log the selected values
+    console.log("City:", city);
+    console.log("Price:", price);
+    console.log("Rent Type:", rentType);
+  };
 
   return (
-    <div style={{
-        position:"relative",
-        top: "150px",
-    }} className=" flex flex-col items-center space-y-6 p-6 ">
+    <div
+      style={{
+        position: "relative",
+      }}
+      className=" mb-36 flex flex-col items-center space-y-8 p-6  gap-14"
+    >
       <h2 className=" title text-lg md:text-xl font-semibold ">
         Vous recherchez une location ?
       </h2>
 
       <div className="flex flex-wrap items-center gap-4">
         <div className="flex flex-col items-center">
-          <label className="text-sm italic text-gray-700">Où le veux-tu ?</label>
+          <label className="text-sm italic text-gray-700">
+            Où le veux-tu ?
+          </label>
           <select
             value={city}
             onChange={(e) => setCity(e.target.value)}
@@ -33,7 +47,9 @@ export default function Search() {
         </div>
 
         <div className="flex flex-col items-center">
-          <label className="text-sm italic text-gray-700">Prix approximatif</label>
+          <label className="text-sm italic text-gray-700">
+            Prix approximatif
+          </label>
           <select
             value={price}
             onChange={(e) => setPrice(e.target.value)}
@@ -47,7 +63,9 @@ export default function Search() {
         </div>
 
         <div className="flex flex-col items-center">
-          <label className="text-sm italic text-gray-700">Quel type de loyer ?</label>
+          <label className="text-sm italic text-gray-700">
+            Quel type de loyer ?
+          </label>
           <select
             value={rentType}
             onChange={(e) => setRentType(e.target.value)}
@@ -59,27 +77,26 @@ export default function Search() {
           </select>
         </div>
 
-        <button className="bg-[#3B3561] text-white rounded-full px-6 mt-5 py-2">
+        <button
+          className="bg-[#3B3561] text-white rounded-full px-6 mt-5 py-2"
+          onClick={handleSearch}
+        >
           Search
         </button>
       </div>
+      <FastFiltring />
 
-      <div style={{
-  position:"relative",
-  top: "150px",
-}} className="flex flex-col gap-4">
-  <h2 className="title  text-lg md:text-xl font-semibold">
-    Où souhaitez-vous louer votre bien ?
-  </h2>
-  <button className=" animated-button w-52 m-auto">
-    <span>Publier une annonce</span>
-    <span></span>
-  </button>
-</div>
-
-      
-
-      
+      <div
+        className="flex flex-col gap-4"
+      >
+        <h2 className="title  text-lg md:text-xl font-semibold">
+          Où souhaitez-vous louer votre bien ?
+        </h2>
+        <button className=" animated-button w-52 m-auto">
+          <span>Publier une annonce</span>
+          <span></span>
+        </button>
+      </div>
     </div>
   );
 }

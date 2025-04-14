@@ -1,5 +1,6 @@
 import { db } from "@/prisma/client";
 import formidable from "formidable";
+import { NextResponse } from "next/server";
 
 export async function GET() {
   const annonces = await db.annonce.findMany({
@@ -31,8 +32,15 @@ export async function GET() {
       }
     },
   });
-  return Response.json(annonces);
+  const categories = await db.annonce.findMany({
+    distinct: ["type_appartement"],
+    select: {
+      type_appartement: true,
+    },
+  });
+  return NextResponse.json({annonces:annonces,categories:categories})
 }
+
 export async function POST(req) {
   const data = await req.json();
   const form = new formidable.IncomingForm();
