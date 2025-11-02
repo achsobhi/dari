@@ -1,0 +1,198 @@
+export const fr = {
+  nav: {
+    home: 'Accueil',
+    about: 'À propos',
+    services: 'Services',
+    portfolio: 'Portfolio',
+    testimonials: 'Témoignages',
+    pricing: 'Tarifs',
+    contact: 'Contact',
+  },
+  hero: {
+    title: 'Achraf — Peintre Professionnel',
+    subtitle: 'Peinture Intérieure & Extérieure',
+    slogan: 'Donnez de nouvelles couleurs à votre maison',
+    viewPortfolio: 'Voir le Portfolio',
+    contactMe: 'Me Contacter',
+  },
+  about: {
+    title: 'À Propos',
+    description: 'Bonjour ! Je suis Achraf, peintre professionnel basé à Rabat, spécialisé dans la peinture intérieure et extérieure. Je fournis un travail précis et de haute qualité avec respect des délais et satisfaction client.',
+    yearsExperience: 'Années d\'expérience',
+    projectsCompleted: 'Projets réalisés',
+    happyClients: 'Clients satisfaits',
+  },
+  services: {
+    title: 'Mes Services',
+    interior: {
+      title: 'Peinture Intérieure',
+      description: 'Peinture professionnelle des murs et plafonds avec des couleurs modernes et finitions variées',
+    },
+    exterior: {
+      title: 'Peinture Extérieure & Rénovation de Façades',
+      description: 'Protection et embellissement des façades avec des matériaux résistants aux intempéries',
+    },
+    preparation: {
+      title: 'Préparation des Surfaces',
+      description: 'Traitement des fissures et défauts, préparation des surfaces pour un résultat parfait',
+    },
+    decorative: {
+      title: 'Finitions Décoratives',
+      description: 'Techniques décoratives modernes pour une touche artistique unique à votre maison',
+    },
+    wallpaper: {
+      title: 'Pose de Papier Peint',
+      description: 'Installation professionnelle de tous types de papier peint',
+    },
+    consultation: {
+      title: 'Consultation Couleurs',
+      description: 'Aide au choix des couleurs adaptées à votre espace',
+    },
+  },
+  portfolio: {
+    title: 'Portfolio',
+    subtitle: 'Découvrez quelques-uns de mes projets réalisés',
+    all: 'Tous',
+    interior: 'Intérieur',
+    exterior: 'Extérieur',
+    decorative: 'Décoratif',
+    viewDetails: 'Voir les détails',
+    before: 'Avant',
+    after: 'Après',
+    projects: {
+      modernSalon: {
+        title: 'Salon Moderne',
+        location: 'Rabat',
+        description: 'Repeinte des murs en satin, avec traitement des surfaces et finitions boiseries',
+      },
+      villaExterior: {
+        title: 'Façade de Villa',
+        location: 'Salé',
+        description: 'Rénovation et peinture de façade extérieure avec couleurs modernes et protection contre l\'humidité',
+      },
+      bedroomDecor: {
+        title: 'Chambre Décorative',
+        location: 'Témara',
+        description: 'Finitions décoratives à l\'éponge avec dégradés de couleurs',
+      },
+      officeSpace: {
+        title: 'Bureau Professionnel',
+        location: 'Rabat',
+        description: 'Peinture de bureau avec couleurs apaisantes et stimulantes pour la productivité',
+      },
+      apartmentRenovation: {
+        title: 'Rénovation d\'Appartement',
+        location: 'Agdal',
+        description: 'Rénovation complète d\'appartement avec couleurs modernes et finitions élégantes',
+      },
+      restaurantWall: {
+        title: 'Mur de Restaurant',
+        location: 'Hassan',
+        description: 'Mur décoratif distinctif avec techniques artistiques modernes',
+      },
+    },
+  },
+  testimonials: {
+    title: 'Témoignages',
+    subtitle: 'Ce que disent mes clients',
+    reviews: [
+      {
+        name: 'Nadia B.',
+        location: 'Rabat',
+        text: 'Travail propre et rapide, le résultat est magnifique ! Achraf est très professionnel et respecte les délais.',
+        rating: 5,
+      },
+      {
+        name: 'Karim L.',
+        location: 'Salé',
+        text: 'Service professionnel, je le recommande vivement ! Qualité de travail excellente et prix raisonnables.',
+        rating: 5,
+      },
+      {
+        name: 'Fatima M.',
+        location: 'Témara',
+        text: 'Le meilleur peintre avec qui j\'ai travaillé. Précis dans le travail et très propre.',
+        rating: 5,
+      },
+      {
+        name: 'Youssef A.',
+        location: 'Agdal',
+        text: 'Excellent dans le choix des couleurs et l\'exécution du travail. Merci Achraf !',
+        rating: 5,
+      },
+    ],
+  },
+  pricing: {
+    title: 'Tarifs',
+    subtitle: 'Forfaits flexibles adaptés à vos besoins',
+    currency: 'DH',
+    startingFrom: 'À partir de',
+    perRoom: 'par pièce',
+    perSqm: 'par m²',
+    contactForQuote: 'Contactez pour un devis',
+    packages: {
+      basic: {
+        title: 'Peinture Chambre Standard',
+        price: '500',
+        features: [
+          'Préparation des surfaces',
+          'Deux couches de peinture',
+          'Couleurs standard',
+          'Nettoyage après travaux',
+        ],
+      },
+      standard: {
+        title: 'Peinture Appartement Complet',
+        price: '3500',
+        features: [
+          'Traitement des fissures',
+          'Peinture toutes pièces',
+          'Couleurs personnalisées',
+          'Finitions boiseries',
+          'Garantie 1 an',
+        ],
+      },
+      premium: {
+        title: 'Façade Extérieure',
+        price: '80',
+        unit: 'par m²',
+        features: [
+          'Nettoyage de façade',
+          'Traitement humidité',
+          'Peinture résistante aux intempéries',
+          'Garantie 2 ans',
+        ],
+      },
+    },
+  },
+  contact: {
+    title: 'Contact',
+    subtitle: 'Vous avez un projet ? Discutons-en !',
+    form: {
+      name: 'Nom complet',
+      email: 'Email',
+      phone: 'Téléphone',
+      message: 'Votre message',
+      send: 'Envoyer',
+      sending: 'Envoi en cours...',
+      success: 'Votre message a été envoyé avec succès !',
+      error: 'Une erreur s\'est produite. Veuillez réessayer.',
+    },
+    info: {
+      phone: 'Téléphone',
+      email: 'Email',
+      location: 'Localisation',
+      locationValue: 'Rabat, Maroc',
+      whatsapp: 'WhatsApp',
+      scanQR: 'Scannez le QR code pour WhatsApp',
+    },
+  },
+  footer: {
+    about: 'À propos d\'Achraf',
+    aboutText: 'Peintre professionnel spécialisé dans la peinture intérieure et extérieure à Rabat et environs.',
+    quickLinks: 'Liens Rapides',
+    followUs: 'Suivez-nous',
+    copyright: '© 2025 Achraf — Tous droits réservés',
+    developedBy: 'Développé par',
+  },
+};

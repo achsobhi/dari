@@ -1,0 +1,198 @@
+export const en = {
+  nav: {
+    home: 'Home',
+    about: 'About',
+    services: 'Services',
+    portfolio: 'Portfolio',
+    testimonials: 'Testimonials',
+    pricing: 'Pricing',
+    contact: 'Contact',
+  },
+  hero: {
+    title: 'Achraf — Professional Painter',
+    subtitle: 'Interior & Exterior Painting',
+    slogan: 'Give your home new colors',
+    viewPortfolio: 'View Portfolio',
+    contactMe: 'Contact Me',
+  },
+  about: {
+    title: 'About Me',
+    description: 'Hello! I\'m Achraf, a professional painter based in Rabat, specializing in interior and exterior painting. I provide precise, high-quality work with respect for deadlines and customer satisfaction.',
+    yearsExperience: 'Years of Experience',
+    projectsCompleted: 'Projects Completed',
+    happyClients: 'Happy Clients',
+  },
+  services: {
+    title: 'My Services',
+    interior: {
+      title: 'Interior Painting',
+      description: 'Professional painting of walls and ceilings with modern colors and varied finishes',
+    },
+    exterior: {
+      title: 'Exterior Painting & Facade Renovation',
+      description: 'Protection and beautification of facades with weather-resistant materials',
+    },
+    preparation: {
+      title: 'Surface Preparation',
+      description: 'Treatment of cracks and defects, surface preparation for perfect results',
+    },
+    decorative: {
+      title: 'Decorative Finishes',
+      description: 'Modern decorative techniques for a unique artistic touch to your home',
+    },
+    wallpaper: {
+      title: 'Wallpaper Installation',
+      description: 'Professional installation of all types of wallpaper',
+    },
+    consultation: {
+      title: 'Color Consultation',
+      description: 'Help choosing the right colors for your space',
+    },
+  },
+  portfolio: {
+    title: 'Portfolio',
+    subtitle: 'Discover some of my completed projects',
+    all: 'All',
+    interior: 'Interior',
+    exterior: 'Exterior',
+    decorative: 'Decorative',
+    viewDetails: 'View Details',
+    before: 'Before',
+    after: 'After',
+    projects: {
+      modernSalon: {
+        title: 'Modern Living Room',
+        location: 'Rabat',
+        description: 'Wall repainting in satin finish, with surface treatment and wood finishes',
+      },
+      villaExterior: {
+        title: 'Villa Facade',
+        location: 'Salé',
+        description: 'Renovation and painting of exterior facade with modern colors and moisture protection',
+      },
+      bedroomDecor: {
+        title: 'Decorative Bedroom',
+        location: 'Témara',
+        description: 'Decorative sponge finishes with gradient colors',
+      },
+      officeSpace: {
+        title: 'Professional Office',
+        location: 'Rabat',
+        description: 'Office painting with calming and productivity-stimulating colors',
+      },
+      apartmentRenovation: {
+        title: 'Apartment Renovation',
+        location: 'Agdal',
+        description: 'Complete apartment renovation with modern colors and elegant finishes',
+      },
+      restaurantWall: {
+        title: 'Restaurant Wall',
+        location: 'Hassan',
+        description: 'Distinctive decorative wall with modern artistic techniques',
+      },
+    },
+  },
+  testimonials: {
+    title: 'Testimonials',
+    subtitle: 'What my clients say',
+    reviews: [
+      {
+        name: 'Nadia B.',
+        location: 'Rabat',
+        text: 'Clean and fast work, the result is amazing! Achraf is very professional and respects deadlines.',
+        rating: 5,
+      },
+      {
+        name: 'Karim L.',
+        location: 'Salé',
+        text: 'Professional service, I highly recommend him! Excellent work quality and reasonable prices.',
+        rating: 5,
+      },
+      {
+        name: 'Fatima M.',
+        location: 'Témara',
+        text: 'The best painter I\'ve worked with. Precise in work and very clean.',
+        rating: 5,
+      },
+      {
+        name: 'Youssef A.',
+        location: 'Agdal',
+        text: 'Excellent in color selection and work execution. Thank you Achraf!',
+        rating: 5,
+      },
+    ],
+  },
+  pricing: {
+    title: 'Pricing',
+    subtitle: 'Flexible packages tailored to your needs',
+    currency: 'MAD',
+    startingFrom: 'Starting from',
+    perRoom: 'per room',
+    perSqm: 'per sqm',
+    contactForQuote: 'Contact for quote',
+    packages: {
+      basic: {
+        title: 'Standard Room Painting',
+        price: '500',
+        features: [
+          'Surface preparation',
+          'Two coats of paint',
+          'Standard colors',
+          'Post-work cleaning',
+        ],
+      },
+      standard: {
+        title: 'Complete Apartment Painting',
+        price: '3500',
+        features: [
+          'Crack treatment',
+          'All rooms painting',
+          'Custom colors',
+          'Wood finishes',
+          '1-year warranty',
+        ],
+      },
+      premium: {
+        title: 'Exterior Facade',
+        price: '80',
+        unit: 'per sqm',
+        features: [
+          'Facade cleaning',
+          'Moisture treatment',
+          'Weather-resistant paint',
+          '2-year warranty',
+        ],
+      },
+    },
+  },
+  contact: {
+    title: 'Contact',
+    subtitle: 'Have a project? Let\'s talk!',
+    form: {
+      name: 'Full Name',
+      email: 'Email',
+      phone: 'Phone',
+      message: 'Your Message',
+      send: 'Send',
+      sending: 'Sending...',
+      success: 'Your message has been sent successfully!',
+      error: 'An error occurred. Please try again.',
+    },
+    info: {
+      phone: 'Phone',
+      email: 'Email',
+      location: 'Location',
+      locationValue: 'Rabat, Morocco',
+      whatsapp: 'WhatsApp',
+      scanQR: 'Scan QR code for WhatsApp',
+    },
+  },
+  footer: {
+    about: 'About Achraf',
+    aboutText: 'Professional painter specializing in interior and exterior painting in Rabat and surroundings.',
+    quickLinks: 'Quick Links',
+    followUs: 'Follow Us',
+    copyright: '© 2025 Achraf — All Rights Reserved',
+    developedBy: 'Developed by',
+  },
+};
